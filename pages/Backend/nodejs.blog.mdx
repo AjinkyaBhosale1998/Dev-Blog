@@ -1,0 +1,27 @@
+---
+title: Node.js
+date: 23rd June 2023
+description: Exploring Node.js for server-side JavaScript
+---
+
+This is my **first** blog post using *markdown* and Node.js.
+
+## Getting Started with Node.js
+
+Node.js enables server-side JavaScript development, providing a platform for building scalable and efficient web applications.
+
+### Simple Node.js Server
+
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello, Node.js!');
+});
+
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+```
